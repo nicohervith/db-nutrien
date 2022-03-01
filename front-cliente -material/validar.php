@@ -20,9 +20,7 @@
 		header('location: https://vps-1440221-x.dattaweb.com:2095/extra_soft/phpMyAdmin/sql.php?server=1&db=admntrar_nutrn_m&table=datos_material&pos=0');
 		
 	}else{
-		?>
-		<h1 class="bad">Los datos ingresados no son correctos</h1>
-		<?php 
+		header("location:index.html");
 		
 	}
 

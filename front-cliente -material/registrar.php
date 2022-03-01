@@ -6,12 +6,9 @@
         $nombre =$_POST["nombre"];
         $email=$_POST["email"];
         $telefono=$_POST["telefono"];
-        $empresa=$_POST["empresa"];
-        $instagram=$_POST["instagram"];
-        $mensaje=$_POST["mensaje"];
         $id= rand(1,99);
 
-        $insertarDatos = "INSERT INTO datos VALUES('$nombre','$email','$telefono','$empresa', '$instagram', '$mensaje' , '$id' )";
+        $insertarDatos = "INSERT INTO datos VALUES('$nombre','$email','$telefono', '$id' )";
 
         $ejecutarInsertar = mysqli_query($conex, $insertarDatos);
 

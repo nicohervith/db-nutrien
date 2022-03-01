@@ -4,7 +4,7 @@
     $material=$_POST['material'];
 
     if($concurso){
-        echo('location:login.html');
+        echo('location:index.html');
     };
 
     mysqli_free_result($resultado);
