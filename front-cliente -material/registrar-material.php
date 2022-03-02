@@ -8,7 +8,7 @@
         $telefono=$_POST["telefono"];
         $id= rand(1,99);
 
-        $insertarDatos = "INSERT INTO datos VALUES('$nombre','$email','$telefono', '$id' )";
+        $insertarDatos = "INSERT INTO datos_material VALUES('$nombre','$email','$telefono', '$id' )";
 
         $ejecutarInsertar = mysqli_query($conex, $insertarDatos);
 

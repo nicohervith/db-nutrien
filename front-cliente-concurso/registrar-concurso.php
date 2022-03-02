@@ -11,7 +11,7 @@
         $mensaje=$_POST["mensaje"];
         $id= rand(1,99);
 
-        $insertarDatos = "INSERT INTO datos VALUES('$nombre','$email','$telefono','$empresa', '$instagram', '$mensaje' , '$id' )";
+        $insertarDatos = "INSERT INTO datos_concurso VALUES('$nombre','$email','$telefono','$empresa', '$instagram', '$mensaje' , '$id' )";
 
         $ejecutarInsertar = mysqli_query($conex, $insertarDatos);
 

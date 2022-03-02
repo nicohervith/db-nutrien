@@ -2,8 +2,8 @@
 
 
     $servidor="localhost";
-    $usuario="root";
-    $clave="";
+    $usuario="admntrar_nutrn1";
+    $clave="nu7r13NAG";
     $baseDeDatos="admntrar_nutrn1";
 
     $conex = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);

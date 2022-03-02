@@ -7,7 +7,7 @@
 
 	$_SESSION['usuario'] = $usuario;
 
-	$conex=mysqli_connect("localhost","root","","admntrar_nutrn_m");
+	$conex=mysqli_connect("localhost","admntrar_nutrn_m","nu7r13NAG","admntrar_nutrn_m");
 
 
 	$consulta="SELECT * FROM usuarios where usuario='$usuario' and contraseña='$contraseña'";
