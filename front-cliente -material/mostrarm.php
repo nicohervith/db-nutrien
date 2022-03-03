@@ -44,7 +44,7 @@ function Footer()
 
 require 'mmat.php';
 
-$consulta = 'SELECT * FROM datos';
+$consulta = 'SELECT * FROM datos_material';
 
 $resultado = $mysqli->query($consulta);
 

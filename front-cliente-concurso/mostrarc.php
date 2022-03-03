@@ -44,7 +44,7 @@ function Footer()
 
 require 'mcon.php';
 
-$consulta = 'SELECT * FROM datos';
+$consulta = 'SELECT * FROM datos_concurso';
 
 $resultado = $mysqli->query($consulta);
 
