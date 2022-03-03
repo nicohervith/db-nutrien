@@ -17,7 +17,7 @@
 	$filas=mysqli_num_rows($resultado);
 
 	if($filas){
-		header('location: https://vps-1440221-x.dattaweb.com:2095/extra_soft/phpMyAdmin/sql.php?server=1&db=admntrar_nutrn1&table=datos_concurso&pos=0');
+		header('location:mostrarc.php');
 		
 	}else{
 		header("location:index.html");
