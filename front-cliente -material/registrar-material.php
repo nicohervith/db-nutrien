@@ -2,7 +2,7 @@
 
     include("con_db.php");
 
-    if(isset($_POST['registrarse'])){
+    if(isset($_POST['submit'])){
         $nombre =$_POST["nombre"];
         $email=$_POST["email"];
         $telefono=$_POST["telefono"];
