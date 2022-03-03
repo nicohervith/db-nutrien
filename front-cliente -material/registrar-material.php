@@ -12,6 +12,8 @@
 
         $ejecutarInsertar = mysqli_query($conex, $insertarDatos);
 
+        header('location:https://nutrienagsolutions.com.ar/expoagro/material.php');
+
         if(!$ejecutarInsertar){
             echo"Error En la linea de sql";
         }
