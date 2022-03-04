@@ -57,11 +57,11 @@ $pdf->SetFont('Arial','',16);
 
 while($row = $resultado-> fetch_assoc()){
 	$pdf->Cell(10,10, $row['id'], 1, 0, 'C', 0);
-	$pdf->Cell(50,10, $row['nombre'], 1, 0, 'C', 0);
-	$pdf->Cell(100,10, $row['email'], 1, 0, 'C', 0);
-    $pdf->Cell(100,10, $row['telefono'], 1, 0, 'C', 0);
-    $pdf->Cell(100,10, $row['empresa'], 1, 0, 'C', 0);
-	$pdf->Cell(30,10, $row['Instagram'], 1, 1, 'C', 0);
+	$pdf->Cell(40,10, $row['nombre'], 1, 0, 'C', 0);
+	$pdf->Cell(80,10, $row['email'], 1, 0, 'C', 0);
+    $pdf->Cell(30,10, $row['telefono'], 1, 0, 'C', 0);
+    $pdf->Cell(20,10, $row['empresa'], 1, 0, 'C', 0);
+	$pdf->Cell(20,10, $row['Instagram'], 1, 1, 'C', 0);
 }
 
 $pdf->Output();
