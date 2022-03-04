@@ -20,14 +20,14 @@ function Header()
     // Movernos a la derecha
     $this->Cell(70);
     // Título
-    $this->Cell(40,10,'Concurso',0,0,'C');
+    $this->Cell(40,10,'Material',0,0,'C');
     // Salto de línea
     $this->Ln(20);
 
     $this->Cell(10,10, 'Id', 1, 0, 'C', 0);
 	$this->Cell(50,10, 'Nombre', 1, 0, 'C', 0);
 	$this->Cell(100,10, 'Email', 1, 0, 'C', 0);
-	$this->Cell(30,10, 'Sexo', 1, 1, 'C', 0);
+	$this->Cell(30,10, 'Telefono', 1, 1, 'C', 0);
 }
 
 // Pie de página
@@ -55,9 +55,9 @@ $pdf->SetFont('Arial','',16);
 
 while($row = $resultado-> fetch_assoc()){
 	$pdf->Cell(10,10, $row['id'], 1, 0, 'C', 0);
-	$pdf->Cell(50,10, $row['nombre'], 1, 0, 'C', 0);
+	$pdf->Cell(40,10, $row['nombre'], 1, 0, 'C', 0);
 	$pdf->Cell(100,10, $row['email'], 1, 0, 'C', 0);
-	$pdf->Cell(30,10, $row['sexo'], 1, 1, 'C', 0);
+	$pdf->Cell(40,10, $row['telefono'], 1, 1, 'C', 0);
 }
 
 $pdf->Output();

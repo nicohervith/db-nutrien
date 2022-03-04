@@ -25,9 +25,11 @@ function Header()
     $this->Ln(20);
 
     $this->Cell(10,10, 'Id', 1, 0, 'C', 0);
-	$this->Cell(50,10, 'Nombre', 1, 0, 'C', 0);
-	$this->Cell(100,10, 'Email', 1, 0, 'C', 0);
-	$this->Cell(30,10, 'Sexo', 1, 1, 'C', 0);
+	$this->Cell(40,10, 'Nombre', 1, 0, 'C', 0);
+	$this->Cell(80,10, 'Email', 1, 0, 'C', 0);
+	$this->Cell(30,10, 'Telefono', 1, 0, 'C', 0);
+    $this->Cell(20,10, 'Empresa', 1, 0, 'C', 0);
+    $this->Cell(20,10, 'Instagram', 1, 1, 'C', 0);
 }
 
 // Pie de página
@@ -57,7 +59,9 @@ while($row = $resultado-> fetch_assoc()){
 	$pdf->Cell(10,10, $row['id'], 1, 0, 'C', 0);
 	$pdf->Cell(50,10, $row['nombre'], 1, 0, 'C', 0);
 	$pdf->Cell(100,10, $row['email'], 1, 0, 'C', 0);
-	$pdf->Cell(30,10, $row['sexo'], 1, 1, 'C', 0);
+    $pdf->Cell(100,10, $row['telefono'], 1, 0, 'C', 0);
+    $pdf->Cell(100,10, $row['empresa'], 1, 0, 'C', 0);
+	$pdf->Cell(30,10, $row['Instagram'], 1, 1, 'C', 0);
 }
 
 $pdf->Output();
